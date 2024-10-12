@@ -1,0 +1,147 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<HTML>
+<HEAD>
+<TITLE>Registration Form</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="#fff8dc" TEXT="#301010" LINK="#3030ff" VLINK="#703090">
+<CENTER>
+<H1> Registration Form </H1>
+<P>
+<!--#echo var="DATE_LOCAL" -->
+</P>
+</CENTER>
+<H2>Late Registration</H2>
+<P>
+We recommend the online registration. <BR>
+If you are unable to register by this form, 
+please send the same content by e-mail or FAX to 
+<BLOCKQUOTE>
+    <ADDRESS>
+    e-mail : tgf01@eken.phys.nagoya-u.ac.jp <BR>
+    FAX : +81-52-702-3540
+    </ADDRESS>
+</BLOCKQUOTE>
+<P>
+The conference fee is 18,000 Yen for regular participants, and 
+10,000 Yen for students. <BR>
+<strong>The fee must be paid in cash (Japanese Yen) upon arrival at the conference. 
+We cannot accept credit cards or checks. 
+</strong>
+</P><P>
+All fields are required to be filled in English.
+</P>
+
+<FORM ACTION="http://traffic.eken.phys.nagoya-u.ac.jp/cgi-bin/regist1.cgi" METHOD="POST">
+<TABLE CELLSPACING="2" CELLPADDING="0" BORDER="0">
+<TR>
+<TD><HR></TD>
+<TD><HR></TD>
+</TR><TR>
+<TD></TD><TD>Title &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		Family name, &nbsp;&nbsp;&nbsp; First name</TD>
+</TR><TR>
+<TD>Name : </TD>
+<TD><SELECT NAME="title">
+    <OPTION VALUE="Mr.">Mr.
+    <OPTION VALUE="Ms.">Ms.
+    <OPTION VALUE="Prof.">Prof.
+    <OPTION VALUE="Dr.">Dr.
+    </SELECT>
+    <INPUT TYPE=TEXT NAME="name" VALUE="e.g. Einstein, Albert"
+    SIZE=45 MAXLENGTH=60>
+</TD>
+</TR><TR>
+<TD>E-mail : </TD>
+<TD> <INPUT TYPE=TEXT NAME="email" VALUE="" SIZE=55 MAXLENGTH=70></TD>
+</TR><TR>
+<TD>Institute / Company : </TD>
+<TD> <INPUT TYPE=TEXT NAME="inst" VALUE="" SIZE=55 MAXLENGTH=70></TD>
+</TR><TR>
+<TD>Street and Number : </TD>
+<TD> <INPUT TYPE=TEXT NAME="street" VALUE="" SIZE=55 MAXLENGTH=70></TD>
+</TR><TR>
+<TD>City / State : </TD>
+<TD> <INPUT TYPE=TEXT NAME="city" VALUE="" SIZE=55 MAXLENGTH=70></TD>
+</TR><TR>
+<TD>ZIP / Postal code : </TD>
+<TD> <INPUT TYPE=TEXT NAME="zip" VALUE="" SIZE=15 MAXLENGTH=20></TD>
+</TR><TR>
+<TD>Country : </TD>
+<TD> <INPUT TYPE=TEXT NAME="country" VALUE="" SIZE=55 MAXLENGTH=70></TD>
+</TR><TR>
+<TD>Phone : </TD>
+<TD> <INPUT TYPE=TEXT NAME="phone" VALUE="" SIZE=35 MAXLENGTH=50></TD>
+</TR><TR>
+<TD>Fax : </TD>
+<TD> <INPUT TYPE=TEXT NAME="fax" VALUE="" SIZE=35 MAXLENGTH=50></TD>
+</TR><TR>
+<TD><HR></TD>
+<TD><HR></TD>
+</TR><TR>
+<TD VALIGN="top">Registration : </TD>
+<TD><INPUT TYPE=radio NAME="status" VALUE="regular" CHECKED>
+    Regular participant <BR>
+    <INPUT TYPE=radio NAME="status" VALUE="student" >
+    Student participant </TD>
+</TR><TR>
+<TD><HR></TD>
+<TD><HR></TD>
+</TR><TR>
+<TD VALIGN="top">Accomodation : </TD>
+<TD><INPUT TYPE=radio NAME="hotel" VALUE="none" CHECKED> None <BR>
+    <INPUT TYPE=radio NAME="hotel" VALUE="single"> Reserve single room <BR> 
+    <INPUT TYPE=radio NAME="hotel" VALUE="twin"> Reserve twin room <BR><BR>
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    From Oct.
+    <SELECT NAME="from">
+    <OPTION VALUE="14">14    <OPTION VALUE="15">15
+    <OPTION VALUE="16">16    <OPTION VALUE="17">17
+    </SELECT>
+    night --- To Oct.
+    <SELECT NAME="to">
+    <OPTION VALUE="18">18    <OPTION VALUE="17">17
+    <OPTION VALUE="16">16    <OPTION VALUE="15">15
+    </SELECT>
+    morning <BR>
+    <OL>
+    <STRONG><LI> Chisan Hotel Nagoya Sakae</STRONG> ----- about 5,000 Yen (per person)
+    <STRONG><LI> Mielparque Nagoya</STRONG> ------------- about 6,000 Yen (per person)<BR>
+    Accompanied person : <INPUT TYPE=TEXT NAME="person" VALUE="" SIZE=40 MAXLENGTH=60><BR><BR>
+    <STRONG><LI> Guest House in Nagoya Univ.</STRONG> --- about 4,000 Yen (per person)
+    </OL>
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    Please select the hotel in your order. <BR>
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    1st : <SELECT NAME="no1">			<OPTION VALUE="chisan">chisan
+	<OPTION VALUE="mielparque">mielparque	<OPTION VALUE="guesthouse">guesthouse
+    </SELECT>
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    2nd : <SELECT NAME="no2">			<OPTION VALUE="chisan">chisan
+	<OPTION VALUE="mielparque">mielparque	<OPTION VALUE="guesthouse">guesthouse
+    </SELECT>
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    3rd : <SELECT NAME="no3">			<OPTION VALUE="chisan">chisan
+	<OPTION VALUE="mielparque">mielparque	<OPTION VALUE="guesthouse">guesthouse
+    </SELECT>
+    <BR>
+</TD>
+</TR><TR>
+<TD><HR></TD>
+<TD><HR></TD>
+</TR>
+</TABLE>
+<UL>
+<LI>If you can share a twin room of the guesthouse with anyone(or some person), 
+    please inform us. <BR>
+<LI>If you have some other requests or questions, please write here.
+</UL>
+<TEXTAREA NAME="comment" ROWS=6 COLS=80 WRAP=HARD></TEXTAREA>
+<P>
+<INPUT TYPE=SUBMIT NAME="submit" VALUE=" Submit "> 
+<INPUT TYPE=RESET NAME="clear" VALUE=" Clear ">
+</FORM>
+<HR>
+<A HREF="index.html">Back</A> to main page.
+</BODY>
+</HTML>
